@@ -26,10 +26,10 @@ struct:
 	gomodifytags -file ${file} -struct ${struct} -add-tags ${tags}
 
 stop:
-	docker compose stop
+	docker-compose stop
 
 down:
-	docker compose down -v
+	docker-compose down -v
 
 logs:
 	docker compose logs -f
